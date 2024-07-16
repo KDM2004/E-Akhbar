@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap");
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.navbar-light {
+  background-color: white;
+}
+
+.navbar-dark {
+  background-color: #343a40;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link,
+.navbar-dark .nav-dropdown-item,
+.navbar-dark .theme-toggle {
+  color: white;
+}
+
+.App {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand,
+.nav-link,
+.nav-dropdown-item {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+}
+
+.category-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-card {
+  border: 5px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.news-card.dark {
+  border-color: white;
+  background-color: #2c2c2c;
+}
+
+.news-card.dark .card-body,
+.news-card.dark .card-title,
+.news-card.dark .card-text,
+.news-card.dark .card-footer,
+.news-card.dark .author-date {
+  color: white;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+.card-text {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 20px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-md-4 {
+  padding-left: 0;
+  padding-right: 0;
+  padding: 15px;
+}
+
+.theme-toggle {
+  font-size: 1.5rem;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  outline: none;
+}
+
+.theme-toggle:focus {
+  outline: none;
+}
